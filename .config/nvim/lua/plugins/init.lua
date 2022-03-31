@@ -33,11 +33,8 @@ packer.startup(function()
   }
   use {"L3MON4D3/LuaSnip"}
   use {"neovim/nvim-lspconfig"}
-  use {"catppuccin/nvim", as = "catppuccin"}
-  use {
-    "hoob3rt/lualine.nvim",
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use {"luisiacc/gruvbox-baby"}
+  use {"hoob3rt/lualine.nvim"}
   use {"windwp/nvim-autopairs"}
   use {"lukas-reineke/indent-blankline.nvim"}
   use {

@@ -6,45 +6,9 @@ if vim.fn.has("termguicolors") then
   opt.termguicolors = true
 end
 
-local catppuccin = require("catppuccin")
-catppuccin.setup(
-    {
-		transparent_background = false,
-		term_colors = false,
-		styles = {
-			comments = "italic",
-			functions = "bold",
-			keywords = "italic",
-			strings = "NONE",
-			variables = "NONE",
-		},
-		integrations = {
-			treesitter = true,
-			native_lsp = {
-				enabled = true,
-				virtual_text = {
-					errors = "italic",
-					hints = "italic",
-					warnings = "italic",
-					information = "italic",
-				},
-				underlines = {
-					errors = "underline",
-					hints = "underline",
-					warnings = "underline",
-					information = "underline",
-				},
-			},
-			gitsigns = true,
-			indent_blankline = {
-				enabled = true,
-				colored_indent_levels = true,
-			},
-		},
-	}
-)
-cmd "colorscheme catppuccin"
-cmd [[hi! Visual guibg=#5024c1]]
+cmd[[colorscheme gruvbox-baby]]
+vim.g.gruvbox_baby_function_style = "bold"
+vim.g.gruvbox_baby_keyword_style = "italic"
 
 require("indent_blankline").setup {
     char = "¦",
@@ -59,11 +23,10 @@ require("indent_blankline").setup {
 require"lualine".setup {
   options = {
     icons_enabled = true,
-    theme = "catppuccin",
     disabled_filetypes = {},
     -- You can add icons if you use nerdfonts
-    component_separators = { left = " ", right = " " },
-    section_separators = { left = " ", right = " " },
+    component_separators = { left = "", right = "" },
+    section_separators = { left = "", right = "" },
   },
   sections = {
     lualine_a = {"mode"},
