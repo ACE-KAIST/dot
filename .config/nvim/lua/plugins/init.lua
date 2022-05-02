@@ -36,7 +36,6 @@ packer.startup(function()
     "hoob3rt/lualine.nvim",
     requires = {"kyazdani42/nvim-web-devicons", opt = true}
   }
-  use {"lukas-reineke/indent-blankline.nvim"}
   use {
     "lewis6991/gitsigns.nvim",
     requires = {"nvim-lua/plenary.nvim" }
@@ -47,6 +46,14 @@ packer.startup(function()
   }
   use {"glepnir/dashboard-nvim"}
   use {"sbdchd/neoformat"} -- Autoformat the code
-  -- use {"windwp/nvim-autopairs"} -- Autopairing parentheses, quotes
+  use {"windwp/nvim-autopairs"} -- Autopairing parentheses, quotes
+
+  -- Colorscheme
+  use {"morhetz/gruvbox"}
+  use {"catppuccin/nvim", as = "catppuccin"}
+  use {"sickill/vim-monokai"}
+  use {"danilo-augusto/vim-afterglow"}
+
   -- use {"RRethy/vim-illuminate"} -- Highlight the words on the cursor
+  -- use {"lukas-reineke/indent-blankline.nvim"} -- Indent lines
 end)

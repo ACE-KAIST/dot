@@ -59,3 +59,4 @@ local function requirePath(path)
   end
 end
 requirePath("plugins")
+requirePath("colors")
