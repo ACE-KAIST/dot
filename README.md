@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 ## dot
-Dot files for work spaces.
+Dot files for work spaces.  
+Support Neovim > 0.5.
 
 ### Installation
 You will need `jedi-language-server`, `black` by default.  
