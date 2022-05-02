@@ -31,18 +31,22 @@ packer.startup(function()
       "saadparwaiz1/cmp_luasnip",
     }
   }
-  use {"L3MON4D3/LuaSnip"}
   use {"neovim/nvim-lspconfig"}
-  use {"luisiacc/gruvbox-baby"}
-  use {"hoob3rt/lualine.nvim"}
-  use {"windwp/nvim-autopairs"}
+  use {
+    "hoob3rt/lualine.nvim",
+    requires = {"kyazdani42/nvim-web-devicons", opt = true}
+  }
   use {"lukas-reineke/indent-blankline.nvim"}
   use {
     "lewis6991/gitsigns.nvim",
-    requires = {
-      "nvim-lua/plenary.nvim"
-      }
-    }
-  use {"mhinz/vim-startify"}
-  use {"sbdchd/neoformat"}
+    requires = {"nvim-lua/plenary.nvim" }
+  }
+  use {
+    "nvim-telescope/telescope.nvim",
+    requires = {"nvim-lua/plenary.nvim"}
+  }
+  use {"glepnir/dashboard-nvim"}
+  use {"sbdchd/neoformat"} -- Autoformat the code
+  -- use {"windwp/nvim-autopairs"} -- Autopairing parentheses, quotes
+  -- use {"RRethy/vim-illuminate"} -- Highlight the words on the cursor
 end)

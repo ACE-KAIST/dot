@@ -30,7 +30,7 @@ alias glog="git log --graph --abbrev-commit --pretty=oneline"
 
 # Functions
 function jpt {
-    jupyter-lab --no-browser --port=$1
+  jupyter-lab --no-browser --port=$1
 }
 
 source $_HOME/dot/completion/git-completion.bash
@@ -38,5 +38,5 @@ source $_HOME/dot/completion/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 if { [ -n "$TMUX" ]; } then
-    tmux source $_HOME/dot/.config/tmux/.tmux.conf
+  tmux source $_HOME/dot/.config/tmux/.tmux.conf
 fi
